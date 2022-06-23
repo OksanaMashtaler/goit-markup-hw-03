@@ -141,6 +141,8 @@ p {
 
 /* -----------hero section------------------ */
 .hero-section {
+  padding: 200px 0;
+
   color: var(--accent-color);
   background-color: var(--color-background-secondary);
 }
@@ -151,10 +153,8 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -167,9 +167,16 @@ p {
   background-color: var(--brand-color);
   margin: 0 auto;
   display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
 }
 
 /* -----------sections preference------------------ */
+.section-preference {
+  padding-top: 94px;
+}
+
 .preference-list {
   display: flex;
 }
@@ -181,6 +188,15 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.preference-list-item {
+  width: calc((100%-90px) / 4);
+}
+
+.preference-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .preference-item-text {
@@ -192,8 +208,13 @@ p {
 
 /* -----------sections work------------------ */
 
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title {
   text-align: center;
+  margin-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -213,6 +234,10 @@ p {
 }
 
 /* -----------sections team------------------ */
+.section-team {
+  background-color: var(--color-backgroubd-team);
+  padding-top: 94px;
+}
 
 .team-item-title {
   font-weight: 500;
@@ -220,6 +245,8 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-list {
@@ -231,6 +258,7 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 30px;
 }
 
 .team-list-item:not(:last-child) {

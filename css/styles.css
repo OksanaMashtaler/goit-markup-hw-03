@@ -237,6 +237,7 @@ p {
 .section-team {
   background-color: var(--color-backgroubd-team);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-item-title {

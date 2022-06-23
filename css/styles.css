@@ -61,6 +61,16 @@ p {
   background-color: var(--accent-color);
 }
 
+.header .container {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  align-items: center;
+  padding: 0 15px;
+}
+
 .logo {
   font-family: var(--font-family-logo);
   font-weight: 700;
@@ -68,9 +78,24 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
+  margin-right: 93px;
 }
+
 .logo-web {
   color: var(--brand-color);
+}
+.nav {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -79,11 +104,22 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--brand-color);
+}
+.contact {
+  padding: 32px 0;
+  margin-left: auto;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
 }
 
 .contact-link {
@@ -92,6 +128,10 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+
+.contact-li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-link:hover,
@@ -111,6 +151,10 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .hero-button {
@@ -121,9 +165,14 @@ p {
   letter-spacing: 0.06em;
   color: var(--accent-color);
   background-color: var(--brand-color);
+  margin: 0 auto;
+  display: block;
 }
 
 /* -----------sections preference------------------ */
+.preference-list {
+  display: flex;
+}
 
 .preference-item-title {
   font-weight: 700;
@@ -143,12 +192,24 @@ p {
 
 /* -----------sections work------------------ */
 
+.title {
+  text-align: center;
+}
+.work-list {
+  display: flex;
+}
+
 .work-item-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+  width: calc((100%-60px) / 3);
 }
 
 /* -----------sections team------------------ */
@@ -161,11 +222,20 @@ p {
   color: var(--secondary-color);
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-item-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+  width: calc((100%-90px) / 4);
 }
 
 /* -----------footer------------------ */

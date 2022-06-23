@@ -349,6 +349,7 @@ p {
 
 .project-list-item {
   margin-right: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .project-list-item:nth-child(3n + 3) {

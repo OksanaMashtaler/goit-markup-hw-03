@@ -278,6 +278,15 @@ p {
 /* -----------portfolio------------------ */
 /* -----project section------- */
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
   font-family: var(--font-family-primary);
   font-weight: 500;
@@ -292,6 +301,19 @@ p {
 .filter-button:focus {
   color: var(--accent-color);
   background-color: var(--brand-color);
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.project-list-item {
+  margin-bottom: 30px;
 }
 
 .project-item-title {
